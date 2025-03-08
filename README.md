@@ -5,6 +5,7 @@
 This project is a **Machine Learning-based Autism Predictor** designed to assess the likelihood of Autism Spectrum Disorder (ASD) based on user responses and optional facial analysis. It employs **XGBoost Classifier with GridSearchCV** for hyperparameter tuning and **SMOTE** for handling imbalanced datasets. The application is built with **Streamlit**, providing an interactive and user-friendly interface for ASD screening.
 
 💻Demo Video
+https://drive.google.com/file/d/14D1xcPv6XjkPhuNKhOJllTPHeq3vm67i/view?usp=drive_link
 
 
  🌟 Features
