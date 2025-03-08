@@ -9,7 +9,7 @@ https://l1nk.dev/CLICK-THIS-TO-OPEN-THE-DEMO-VIDEO
 
 
  🌟 Features
-✅ **ASD Screening Questions** – A structured questionnaire assessing behavioral traits associated with ASD.
+✅ **ASD Screening Questions** – A structured questionnaire assessing behavioral traits associated with ASD.\n
 ✅ **Facial Analysis (Optional)** – Uses image processing techniques to detect facial features that may contribute to ASD prediction.
 ✅ **Machine Learning Model** – Incorporates an optimized **XGBoost Classifier** for accurate predictions.
 ✅ **Data Handling** – Uses **SMOTE** to balance class distribution and improve model performance.
