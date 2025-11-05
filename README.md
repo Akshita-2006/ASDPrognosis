@@ -7,7 +7,7 @@ This project is a **Machine Learning-based Autism Predictor** designed to assess
 
 ## 💻Demo Video
 
-https://acesse.one/CLICK-TO-SEE-THE-DEMO-VIDEO
+https://drive.google.com/drive/u/1/home
 
 
 ## 🌟 Features
