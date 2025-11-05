@@ -7,8 +7,7 @@ This project is a **Machine Learning-based Autism Predictor** designed to assess
 
 ## 💻Demo Video
 
-https://drive.google.com/drive/u/1/folders/1XM1Ijf647BK4AsAaabVWXBH9OeMvsaJD
-
+https://drive.google.com/file/d/1YQWXFSXtlV8HbRmffKJMPws130cBUeLq/view?usp=sharing
 
 ## 🌟 Features
 ✅ **ASD Screening Questions** – A structured questionnaire assessing behavioral traits associated with ASD.
