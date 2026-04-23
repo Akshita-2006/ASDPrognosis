@@ -56,10 +56,6 @@ https://drive.google.com/file/d/1YQWXFSXtlV8HbRmffKJMPws130cBUeLq/view?usp=shari
 4. **The app calculates a final ASD likelihood score using questionnaire responses and facial analysis.**
 5. **Results are displayed with recommendations for further screening if necessary.**
 
-## 🖼️ Example
-
-https://acesse.one/CLICK-TO-OPEN-THE-RESULTS
-
 ## 🤝 Contributing
 We welcome contributions from the community! Follow these steps to contribute:
 1. **Fork the repository.**
