@@ -134,10 +134,10 @@ def train_model(data_path: str = "teen_adult_asd_train.csv"):
 
 
     model = XGBClassifier(
-        n_estimators=200,
-        max_depth=3,
-        learning_rate=0.05,
-        subsample=0.8,
+        n_estimators=150,
+        max_depth=2,
+        learning_rate=0.07,
+        subsample=0.7,
         colsample_bytree=0.8,
         min_child_weight=4,
         gamma=0.2,
