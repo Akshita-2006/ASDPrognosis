@@ -134,8 +134,8 @@ def train_model(data_path: str = "teen_adult_asd_train.csv"):
 
 
     model = XGBClassifier(
-        n_estimators=300,
-        max_depth=4,
+        n_estimators=200,
+        max_depth=3,
         learning_rate=0.05,
         subsample=0.8,
         colsample_bytree=0.8,
@@ -166,7 +166,7 @@ def train_model(data_path: str = "teen_adult_asd_train.csv"):
     joblib.dump(model, "asd_model.pkl")
 
     y_proba = model.predict_proba(X_test)[:, 1]
-    prediction_threshold = 0.45
+    prediction_threshold = 0.50
     y_pred  = (y_proba >= prediction_threshold).astype(int)
     tn, fp, fn, tp = confusion_matrix(y_test, y_pred, labels=[0, 1]).ravel()
     specificity = tn / (tn + fp) if (tn + fp) else 0.0
