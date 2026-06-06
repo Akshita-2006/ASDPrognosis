@@ -123,13 +123,14 @@ def train_model(data_path: str = "teen_adult_asd_train.csv"):
     # Training data
     y_train = y
 
-    # SMOTE on training split only
-    smote = SMOTE(random_state=42, k_neighbors=5)
-    X_train_res, y_train_res = smote.fit_resample(X_train, y_train)
+    #  SMOTE on training split only
+    # smote = SMOTE(random_state=42, k_neighbors=5)
+    # X_train_res, y_train_res = smote.fit_resample(X_train, y_train)
 
     # Class weight for any remaining imbalance
-    neg = (y_train_res == 0).sum()
-    pos = (y_train_res == 1).sum()
+    # Class weight for imbalance
+    neg = (y_train == 0).sum()
+    pos = (y_train == 1).sum()
     spw = neg / pos if pos > 0 else 1.0
 
 
@@ -150,7 +151,7 @@ def train_model(data_path: str = "teen_adult_asd_train.csv"):
     )
 
 
-    model.fit(X_train_res, y_train_res)
+    model.fit(X_train, y_train)
     print("Train shape:", X_train.shape)
     print("Test shape:", X_test.shape)
 
