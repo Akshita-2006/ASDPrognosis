@@ -88,6 +88,18 @@ This project was trained using clinically inspired AQ-10 ASD screening datasets 
 - [Adolescent ASD Screening Dataset](https://archive.ics.uci.edu/dataset/420/autistic+spectrum+disorder+screening+data+for+adolescent)
 
 ---
+## 🚀 Live Demo
+
+🔗 https://asdprognosis.streamlit.app/
+
+---
+
+## 🎥 Streamlit Profile
+
+🔗 https://share.streamlit.io/user/akshita-2006
+
+---
+
 ## 🛠️ Tech Stack
 
 * Python
