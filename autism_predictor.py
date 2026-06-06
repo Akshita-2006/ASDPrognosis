@@ -15,7 +15,7 @@ from sklearn.metrics import (
     confusion_matrix, ConfusionMatrixDisplay
 )
 from xgboost import XGBClassifier
-from imblearn.over_sampling import SMOTE
+# from imblearn.over_sampling import SMOTE
 
 # Haar Cascades
 
