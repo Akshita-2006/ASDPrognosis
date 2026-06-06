@@ -79,6 +79,15 @@ Facial analysis contributes only a small calibrated weight to the final predicti
 
 ---
 
+## 📂 Dataset Sources
+
+This project was trained using clinically inspired AQ-10 ASD screening datasets from the UCI Machine Learning Repository:
+
+- [Adult ASD Screening Dataset](https://archive.ics.uci.edu/dataset/426/autism+screening+adult)
+
+- [Adolescent ASD Screening Dataset](https://archive.ics.uci.edu/dataset/420/autistic+spectrum+disorder+screening+data+for+adolescent)
+
+---
 ## 🛠️ Tech Stack
 
 * Python
