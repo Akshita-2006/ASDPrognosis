@@ -1,85 +1,116 @@
-# Autism Predictor with Machine Learning
+# 🧠 Autism Spectrum Disorder (ASD) Screening Tool
 
+An AI-powered Autism Spectrum Disorder (ASD) screening system built using **XGBoost Machine Learning**, **AQ-10 clinical screening**, and **facial behavioural analysis**.
 
-## 🚀 Overview
-This project is a **Machine Learning-based Autism Predictor** designed to assess the likelihood of Autism Spectrum Disorder (ASD) based on user responses and optional facial analysis. It employs **XGBoost Classifier with GridSearchCV** for hyperparameter tuning and **SMOTE** for handling imbalanced datasets. The application is built with **Streamlit**, providing an interactive and user-friendly interface for ASD screening.
+This project combines predictive analytics, healthcare-focused machine learning, and explainable AI techniques to estimate ASD likelihood based on behavioural screening responses and optional facial cues.
 
+---
 
-## 💻Demo Video
+## 🚀 Features
 
-https://drive.google.com/file/d/1YQWXFSXtlV8HbRmffKJMPws130cBUeLq/view?usp=sharing
+* ✅ AQ-10 based ASD screening questionnaire
+* ✅ XGBoost predictive analytics model
+* ✅ Separate train/test dataset evaluation
+* ✅ Facial behavioural analysis using OpenCV
+* ✅ Explainable AI metrics and feature importance
+* ✅ ROC-AUC, F1-score, Recall, Specificity evaluation
+* ✅ Streamlit interactive web interface
+* ✅ Clinical probability calibration
+* ✅ Confusion matrix and ROC curve visualization
 
-## 🌟 Features
-✅ **ASD Screening Questions** – A structured questionnaire assessing behavioral traits associated with ASD.
+---
 
-✅ **Facial Analysis (Optional)** – Uses image processing techniques to detect facial features that may contribute to ASD prediction.
+## 🧠 Machine Learning Pipeline
 
-✅ **Machine Learning Model** – Incorporates an optimized **XGBoost Classifier** for accurate predictions.
+### Data Preprocessing
 
-✅ **Data Handling** – Uses **SMOTE** to balance class distribution and improve model performance.
+* Missing value handling
+* Dynamic AQ-10 column mapping
+* One-hot encoding
+* Feature alignment between train/test datasets
+* SMOTE balancing for minority ASD class
 
-✅ **Real-time Visualization** – Displays dataset insights, including ASD class distribution and prediction results.
+### Model
 
-✅ **Streamlit Web App** – A fully interactive and easy-to-use interface with live model predictions.
+* XGBoost Classifier
+* Regularization to reduce overfitting
+* Probability threshold calibration
+* Healthcare-oriented sensitivity optimization
 
-## 🛠️ Installation
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/autism-predictor.git
-   cd autism-predictor
-   ```
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Run the Streamlit app:**
-   ```bash
-   streamlit run app.py
-   ```
+---
 
-## 📊 Dataset
-- The model is trained on an **Autism Spectrum Disorder (ASD) Screening dataset** (e.g., `train.csv`).
-- The dataset includes key features such as **age, gender, ethnicity, screening test responses, and ASD diagnosis**.
-- Data preprocessing includes handling missing values, dropping redundant columns, and encoding categorical features.
+## 📊 Model Performance
 
-## 🧠 Model & Training
-- **Preprocessing:** The dataset is cleaned by removing irrelevant features and encoding categorical variables.
-- **Oversampling:** **SMOTE (Synthetic Minority Over-sampling Technique)** is used to address class imbalance.
-- **Classifier:** The model leverages **XGBoost**, known for its high efficiency and performance in classification tasks.
-- **Hyperparameter Tuning:** **GridSearchCV** optimizes parameters such as learning rate, max depth, and number of estimators.
-- **Evaluation:** The model reports the best accuracy score after training and tuning.
+| Metric               | Score  |
+| -------------------- | ------ |
+| Accuracy             | 97.53% |
+| Balanced Accuracy    | 98.20% |
+| Recall / Sensitivity | 100%   |
+| Specificity          | 96.40% |
+| Precision            | 92.73% |
+| F1 Score             | 0.962  |
+| ROC-AUC              | 0.998  |
+| Brier Score          | 0.019  |
 
-## 🎯 Usage
-1. **Answer the ASD screening questionnaire by selecting responses to behavioral questions.**
-2. **(Optional) Upload a facial image for analysis.**
-3. **Click the 'Predict Autism (ASD)' button.**
-4. **The app calculates a final ASD likelihood score using questionnaire responses and facial analysis.**
-5. **Results are displayed with recommendations for further screening if necessary.**
+---
 
-## 🤝 Contributing
-We welcome contributions from the community! Follow these steps to contribute:
-1. **Fork the repository.**
-2. **Create a new branch:**
-   ```bash
-   git checkout -b feature-branch
-   ```
-3. **Make your changes and commit them:**
-   ```bash
-   git commit -m "Add new feature"
-   ```
-4. **Push to the branch and create a Pull Request.**
+## 🩺 Clinical Screening Logic
 
-## 🚀 Future Enhancements
-🔹 Improve facial analysis by integrating **deep learning models for feature extraction**.
+The system uses:
 
-🔹 Expand the dataset to include **more diverse populations** for better generalization.
+* AQ-10 behavioural screening
+* supplementary behavioural indicators
+* optional facial gaze analysis
+* calibrated predictive probabilities
 
-🔹 Enhance the web app with **real-time feedback and report generation**.
+This tool is intended for **screening support only** and is **not a medical diagnosis system**.
 
-🔹 Deploy the application using **cloud services** for wider accessibility.
+---
 
+## 🖼️ Facial Analysis
 
+Optional facial analysis is performed using:
 
-## 📧 Contact
-For any queries, feel free to open an issue on **[GitHub Issues](https://github.com/yourusername/autism-predictor/issues)** or reach out via email.
+* Haar Cascade face detection
+* eye visibility analysis
+* behavioural gaze indicators
 
+Facial analysis contributes only a small calibrated weight to the final prediction.
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* Streamlit
+* XGBoost
+* Scikit-learn
+* OpenCV
+* Pandas
+* NumPy
+* Matplotlib
+
+---
+
+## ▶️ Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/Akshita-2006/ASDPrognosis.git
+
+# Go to project folder
+cd ASDPrognosis
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit app
+streamlit run autism_predictor.py
+```
+---
+
+## ⚠️ Disclaimer
+
+This project is intended for educational and screening purposes only.
+
+It does not replace professional medical evaluation, diagnosis, or treatment.
