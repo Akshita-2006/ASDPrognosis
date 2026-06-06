@@ -43,14 +43,14 @@ This project combines predictive analytics, healthcare-focused machine learning,
 
 | Metric               | Score  |
 | -------------------- | ------ |
-| Accuracy             | 97.53% |
-| Balanced Accuracy    | 98.20% |
-| Recall / Sensitivity | 100%   |
+| Accuracy             | 96.91% |
+| Balanced Accuracy    | 97.22% |
+| Recall / Sensitivity | 98.04% |
 | Specificity          | 96.40% |
-| Precision            | 92.73% |
-| F1 Score             | 0.962  |
-| ROC-AUC              | 0.998  |
-| Brier Score          | 0.019  |
+| Precision            | 92.59% |
+| F1 Score             | 0.952  |
+| ROC-AUC              | 0.999  |
+| Brier Score          | 0.021  |
 
 ---
 
