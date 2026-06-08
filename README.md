@@ -28,7 +28,6 @@ This project combines predictive analytics, healthcare-focused machine learning,
 * Dynamic AQ-10 column mapping
 * One-hot encoding
 * Feature alignment between train/test datasets
-* SMOTE balancing for minority ASD class
 
 ### Model
 
